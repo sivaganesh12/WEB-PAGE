@@ -1,0 +1,84 @@
+<!DOCKTYPE html>
+<html>
+<head>
+<title>Login Page design in html and css</title>
+<link rel="stylesheet"    type="text/css"  href="signin.css">
+<link href="Education_logo..png" rel="shortcut icon" type="image/x-icon" />
+    
+ <script>
+  function validate_signin()
+  {
+      var p=document.getElementById('pass').value;
+	 var pass_pat=/^[0-6]+$/;
+	if (!(pass_pat.test(x1)))
+	{
+	    alert("Enter the valid Regno.Ex:15BIT0354");
+	}
+  }
+</script>
+    
+</head>
+<body >
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script>
+	  $(document).ready(function(){
+	    $(".jq1").focus(function(){
+		  $(this).css("background-color","#e5e5e5");
+		});
+		 $(".jq1").blur(function(){
+        $(this).css("background-color", "#ffffff");
+    });
+	  });
+	</script>
+    
+    
+<div style="float:left;width:15%;height:16%;background-color:none;overflow:hidden">
+    <img src="Education_logo..png" style="height:90%;width:50%;float:right:padding:8px;margin:5px;">
+    </div>
+    
+<div style="width:100%;height:18%;background-color:ghostwhite;color:white;margin:0px;padding:0px;">
+   <br>
+     <form id="tfnewsearch" method="get">
+		<input type="text"  placeholder="Search what you need" class="tftextinput" name="q" size="21" maxlength="120%"><input type="submit" id="sch" value="SEARCH" class="tfbutton">
+	 </form>
+    <button type="button" class="btn btn-primary" style="margin-top:-8.5%;margin-left:81%;" onClick="location.href='signin.html'">SIGN IN</button>
+	<button type="button" class="btn btn-primary" style="margin-top:-8.5%;margin-left:90%;" onClick="location.href='signup.html'">SIGN UP</button>
+</div>
+<div style="height:7.5%;background-color:#0D304E;color:white">
+<table>
+   <tr style="margin-left:10%">
+    <th class="th" id="d1"><a href="project.html">Home</a></th>
+    <th class="th" id="d2"><a href="#books">Books</a></th>
+    <th class="th" id="d3"><a href="quiz.html">Quiz</a></th>
+    <th class="th" id="d3"><a href="#quiz-result">Quiz<br>result</a></th>
+    <th class="th" id="d3"><a href="#college">college<br>Details</a></th>
+    <th class="th" id="d3"><a href="about.html">About</a></th>
+    <th class="th" id="d4"><a href="contact.html">Contact us</a></th>
+   </tr>
+</table>
+</div>  
+    
+    <div id="login">
+		<h1>Welcome to exam portal. Please login.</h1>
+	<form method="get" action="project.html" target="blank">	
+	<fieldset>
+	<p><input type="text" required value="UserId" onBlur="if(this.value=='')this.value='UserId'" onFocus="if(this.value=='UserId')this.value=''" class="jq1" autofocus></p>
+<p><input type="password" required placeholder="********" onFocus="if(this.value=='Password')this.value=''" id="pass" class="jq1"></p>
+        
+	<p><input type="submit" value="Login" style="font-size:100%;color:white;"><a href="project.html" id="newu"></p>
+	<a href="signup.html" id="newu"><p id='newu'>Don't have Account,Just Create</p></a>
+	</fieldset>
+		</form>
+		</div>
+<div style="width:100%;height:11%;background-color:#0D304E;overflow:hidden">
+<a href="project.html" id="footer">Home</a><br>
+<a href="about.html" id="footer">About us</a><br>
+<a href="contact.html" style="margin-top:-22%;" id="footer">Contact us</a>
+
+    <p style="margin-top:-5%;text-align:center;color:white" id="footer">VIT University, Vellore - 632014, Tamil Nadu, India.</p>
+	<p style="margin-top:-3%;text-align:center;color:white" id="footer">Thank you for visiting our page</p>
+
+</div>
+</body>
+</html>
